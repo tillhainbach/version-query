@@ -42,6 +42,14 @@ matrix:
       osx_image: xcode11
       language: generic
       env: TRAVIS_PYTHON_VERSION="3.8-dev"
+    - os: osx
+      osx_image: xcode11
+      language: generic
+      env: TRAVIS_PYTHON_VERSION="pypy3.5-7"
+    - os: osx
+      osx_image: xcode11
+      language: generic
+      env: TRAVIS_PYTHON_VERSION="pypy3.6-7"
   allow_failures:
     - python: "3.8-dev"
     - env: TRAVIS_PYTHON_VERSION="3.8-dev"
